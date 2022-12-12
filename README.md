@@ -1,7 +1,7 @@
 # Web-Develoment-Final-Project
-Run Npm i to install dendencies
+Run npm i to install dendencies
 
-Node app to start the server.
+Run node app to start the server.
 
 Server will run on http://localhost:3000/
 
