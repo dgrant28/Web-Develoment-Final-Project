@@ -1,0 +1,20 @@
+<%- include('../partials/header.ejs') %>
+    <div class="content">
+        <p>Select a connection to view</p>
+
+        <%topics.forEach(topic=>{%>
+            <p>
+                <%= topic %>
+            </p>
+            <%connections.forEach(connection=>{%>
+                <%if(connection.topic==topic ) {%>
+                    <a href="/connections/<%= connection._id%>">
+                        <p>
+                            <%= connection.name%>
+                        </p>
+                    </a>
+                    <% }%>
+                        <%});%>
+                            <%});%>
+    </div>
+    <%- include('../partials/footer.ejs') %>

@@ -1,0 +1,45 @@
+<%- include('../partials/header.ejs')%>
+    <div class="c1">
+        <div class="form">
+            <form action='/connections' method='POST'>
+                <table>
+                    <tr>
+                        <td><label for="Username">Game:</label></td>
+                        <td><input type="text" name="name" id="name" required></td>
+                    </tr>
+                    <tr>
+                        <td><label for="Title">Platform:</label></td>
+                        <td><input type="text" name="topic" id="topic" required></td>
+                    </tr>
+                    <tr>
+                        <td><label for="Details">Details:</label></td>
+                        <td><input type="text" name="details" id="details" required></td>
+                    </tr>
+                    <tr>
+                        <td><label for="Location">Location:</label></td>
+                        <td><input type="text" name="location" id="location" required></td>
+                    </tr>
+                    <tr>
+                        <td><label for="When">Date:</label></td>
+                        <td><input type="date" id="date" name="date" value="mm-dd-yyyy" required></td>
+                    </tr>
+                    <tr>
+                        <td><label for="Start">Start:</label></td>
+                        <td><input type="time" id="start" name="start" min="00:00" max="23:59" required></td>
+                    </tr>
+                    <tr>
+                        <td><label for="End">End:</label></td>
+                        <td><input type="time" id="end" name="end" min="00:00" max="23:59" required></td>
+                    </tr>
+                    <tr>
+                        <td><label for="URL">Image URL:</label></td>
+                        <td><input type="URL" name="image" id="image" required></td>
+                    </tr>
+                    <tr>
+                        <td colspan="2" class="align-right"><button>Create Connection</button></td>
+                    </tr>
+                </table>
+            </form>
+        </div>
+    </div>
+    <%- include('../partials/footer.ejs')%>

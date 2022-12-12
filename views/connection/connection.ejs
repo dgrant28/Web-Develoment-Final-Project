@@ -1,0 +1,61 @@
+<%- include('../partials/header.ejs')%>
+    <div class="pic">
+        <a href="#company">
+            <img alt="Logo" src=/images/gaming.jpg width="175" height="175">
+        </a>
+    </div>
+    <%if(user==connection.host_name.id) {%>
+        <form>
+            <button action="submit" formmethod="GET" formaction="/connections/<%= connection._id%>/edit">Edit</button>
+            <button action="submit" formmethod="POST"
+                formaction="/connections/<%= connection._id%>?_method=DELETE">Delete</button>
+        </form>
+        <%} else {%>
+            <p>RSVP to attend!</p>
+            <form>
+                <button action="submit" formmethod="POST"
+                    formaction="/connections/<%= connection._id%>/rsvp">Yes</button>
+                <button action="submit" formmethod="POST"
+                    formaction="/connections/<%= connection._id%>/rsvp">No</button>
+                <button action="submit" formmethod="POST"
+                    formaction="/connections/<%= connection._id%>/rsvp">Maybe</button>
+            </form>
+            <%}%>
+                <div class="description">
+                    <ul>
+                        <li>
+                            <p>
+                                Hosted <%= connection.createdAt.toLocaleString()%> by <%= connection.host_name.firstName
+                                        + ' ' + connection.host_name.lastName%>
+                            </p><br>
+                        </li>
+                        <li>
+                            <p>
+                                <%= connection.date%>
+                            </p><br>
+                        </li>
+                        <li>
+                            <p>
+                                <%= connection.start%> - <%= connection.end%>
+                            </p><br>
+                        </li>
+                        <li>
+                            <p>
+                                <%= connection.location%>
+                            </p><br>
+                        </li>
+                    </ul>
+                </div>
+                <div class="details">
+                    <p>
+                        <%= connection.name%>
+                    </p>
+                    <ul>
+                        <li>
+                            <p>
+                                <%= connection.details%>
+                            </p>
+                        </li>
+                    </ul>
+                </div>
+                <%- include('../partials/footer.ejs')%>

@@ -1,0 +1,198 @@
+.header {
+    overflow: hidden;
+    background-color: #465063;
+    padding: 10px 10px;
+}
+
+.header a {
+    text-decoration: none;
+    font: 20px Arial;
+    color: rgb(255, 255, 255);
+    padding: 20px;
+}
+
+.logo {
+    font-weight: lighter;
+    font: 30px Arial;
+    padding-top: 15px;
+    padding-right: 20px;
+    float: left;
+}
+
+.header-right {
+    vertical-align: top;
+    float: right;
+    font-weight: lighter;
+    padding-top: 30px;
+    padding-right: 20px;
+}
+
+.Connect {
+    padding-top: 230px;
+    padding-left: 30px;
+    padding-bottom: 20px;
+}
+
+
+.content {
+    font: 20px Arial;
+    font-weight: 400;
+    text-align: center;
+    color: black;
+    transform: translate(30px);
+}
+
+.details {
+    padding-bottom: 20px;
+    padding-left: 550px;
+    text-decoration: none;
+    color: black;
+    font: 25px Arial;
+    font-weight: 400;
+}
+
+.description {
+    padding-left: 800px;
+    padding-top: 10px;
+    padding-bottom: -10px;
+    text-decoration: none;
+    color: black;
+    font: 25px Arial;
+    font-weight: 400;
+}
+
+.connections {
+    padding-left: 550px;
+    text-decoration: none;
+    color: black;
+    font: 25px Arial;
+    font-weight: 400;
+}
+
+ul {
+    list-style-type: none;
+    padding-left: 50;
+    padding-bottom: 30px;
+    margin: 0;
+    color: black;
+    text-decoration: none;
+}
+
+ul a {
+    color: black;
+    background-color: transparent;
+    text-decoration: none;
+    font-weight: lighter;
+    margin: 0;
+    font: 20px Arial;
+}
+
+ul p {
+    color: black;
+    background-color: transparent;
+    text-decoration: none;
+    font-weight: lighter;
+    margin: 0;
+    font: 20px Arial;
+}
+
+.buttons {
+    color: rgb(255, 255, 255);
+    font-weight: lighter;
+    float: right;
+    padding-right: 550px;
+    font: 20px Arial;
+    overflow: hidden;
+}
+
+.create {
+    color: rgb(255, 255, 255);
+    font-weight: lighter;
+    float: right;
+    padding-right: 790px;
+    font: 25px Arial;
+    overflow: hidden;
+}
+
+.form {
+    color: black;
+    background-color: transparent;
+    text-decoration: none;
+    font-weight: lighter;
+    margin: 0;
+    padding-left: 750px;
+    padding-bottom: 10px;
+    font: 20px Arial;
+    vertical-align: middle;
+}
+
+.form form {
+    padding-top: 15px;
+}
+
+.form input {
+    font: 20px Arial;
+}
+
+input,
+textarea {
+    font: 20px Arial;
+}
+
+.pic {
+    float: left;
+    padding-left: 535px;
+    font: 20px Arial;
+    overflow: hidden;
+}
+
+.c1 a {
+    text-decoration: none;
+    font: 20px Arial;
+    color: rgb(255, 255, 255);
+    padding: 20px;
+}
+
+.title {
+    list-style-type: none;
+    margin: 0;
+    color: black;
+    text-decoration: none;
+    padding-left: 550px;
+    font: 25px Arial;
+    font-weight: 400;
+}
+
+.footer {
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    overflow: hidden;
+    background-color: #465063;
+    padding: 30px 10px;
+}
+
+.footer a {
+    padding: 18px;
+    text-decoration: none;
+    line-height: 25px;
+    border-radius: 4px;
+    font: 20px Arial;
+}
+
+.success {
+    background: rgba(108, 192, 112, 0.7);
+    color: #fff;
+    width: 70%;
+    text-align: center;
+    padding: 10px 10px;
+}
+
+.error {
+    background: rgba(255, 102, 51, 0.7);
+    color: #fff;
+    width: 70%;
+    text-align: center;
+    padding: 10px 10px;
+}
